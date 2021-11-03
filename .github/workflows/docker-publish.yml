@@ -48,5 +48,7 @@ jobs:
         uses: docker/build-push-action@v2.7.0
         with:
           context: 14.04
-          tags: marsfan/d1-tina-buildenv:14.04
+          tags: |
+            barrowwight/d1-tina-buildenv:14.04
+            ghcr.io/marsfan/d1-tina-buildenv:14.04
           push: true
