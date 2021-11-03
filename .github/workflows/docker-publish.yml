@@ -47,5 +47,5 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2.7.0
         with:
-          file: 14.04
+          context: 14.04
           tags: marsfan/d1-tina-buildenv:14.04
