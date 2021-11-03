@@ -17,6 +17,9 @@ jobs:
       packages: write
 
     steps:      
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
       - name: Docker Setup Buildx
         uses: docker/setup-buildx-action@v1.6.0
         
@@ -52,7 +55,10 @@ jobs:
       contents: read
       packages: write
 
-    steps:      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
       - name: Docker Setup Buildx
         uses: docker/setup-buildx-action@v1.6.0
         
