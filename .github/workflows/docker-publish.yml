@@ -49,3 +49,4 @@ jobs:
         with:
           context: 14.04
           tags: marsfan/d1-tina-buildenv:14.04
+          push: true
